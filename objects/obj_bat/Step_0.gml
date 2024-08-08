@@ -7,7 +7,7 @@ if key_pressed {
 	}
 }
 
-if !key_pressed {
+if !key_pressed and !obj_button_pause.game_paused {
 	if mouse_x - obj_bat.sprite_width/2 > 132 and mouse_x + obj_bat.sprite_width/2 < 1788 {
 		x = mouse_x
 	} else if mouse_x <= 132 {
